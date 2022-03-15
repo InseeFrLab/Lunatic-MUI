@@ -1,0 +1,40 @@
+.lunatic-component {
+	.declarations-lunatic {
+		margin-bottom: 0.4rem;
+	}
+
+	.declaration-instruction {
+		font-style: italic;
+		font-size: 80%;
+	}
+
+	.declaration-comment {
+		font-size: 80%;
+	}
+
+	.declaration-statement {
+		font-style: italic;
+		font-size: 80%;
+		color: blue;
+	}
+
+	.declaration-help {
+		font-style: italic;
+		font-size: 80%;
+		color: green;
+	}
+
+	.declaration-warning {
+		font-style: bold;
+		font-size: 80%;
+		color: red;
+	}
+
+	.declaration-message_filter {
+		font-size: 100%;
+		color: rgb(73, 66, 66);
+		&:before {
+			content: '→ ';
+		}
+	}
+}
