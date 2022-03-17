@@ -20,6 +20,13 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          filters: |
+            resources:
+              - 'docs/**'
+              - 'src/stories/**'
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
